@@ -1,9 +1,10 @@
 let Note = () => {
-    return(
-        <div>
+  return (
+    <div className="note">
+      <h1>Note title</h1>
+      <p>it is first note</p>
+    </div>
+  );
+};
 
-        </div>
-    )
-}
-
-export default Note
+export default Note;

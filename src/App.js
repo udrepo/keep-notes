@@ -1,8 +1,15 @@
-let App = () =>{
-  return(
-      <div>
-      </div>
-  )
-}
+import Header from "./components/Header";
+import Note from "./components/Note";
+import Footer from "./components/Footer";
 
-export default App
+let App = () => {
+  return (
+    <div>
+      <Header />
+      <Note />
+      <Footer />
+    </div>
+  );
+};
+
+export default App;

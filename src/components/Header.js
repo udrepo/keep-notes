@@ -1,8 +1,8 @@
 let Header = () => {
     return(
-        <div>
-
-        </div>
+        <header>
+            <h1>Keep Notes</h1>
+        </header>
     )
 }
 

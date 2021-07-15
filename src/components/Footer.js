@@ -1,8 +1,8 @@
 let Footer = () => {
     return(
-        <div>
-
-        </div>
+        <footer>
+            <p>Copyright ⓒ {new Date().getFullYear()}</p>
+        </footer>
     )
 }
 
