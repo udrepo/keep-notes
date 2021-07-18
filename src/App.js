@@ -1,8 +1,8 @@
 import { useState } from "react";
 import Header from "./components/Header";
-import Footer from "./components/Footer";
 import Note from "./components/Note";
 import NoteArea from './components/NoteArea'
+
 
 let App = ()=>{
   const [notes, setNotes] = useState([]);
@@ -36,7 +36,6 @@ let App = ()=>{
           />
         );
       })}
-      <Footer />
     </div>
   );
 }
