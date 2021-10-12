@@ -1,12 +1,11 @@
 import NoteIcon from '@material-ui/icons/Note';
 
-let Header = () => {
+const Header = () => {
     return(
         <header>
-        
-            <h1><NoteIcon /> Keep Notes</h1>
+            <h1><NoteIcon/> Keep Notes</h1>
         </header>
     )
 }
 
-export default Header
+export default Header;

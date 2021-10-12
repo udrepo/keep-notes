@@ -4,16 +4,14 @@ import Note from "./components/Note";
 import NoteArea from './components/NoteArea'
 
 
-let App = ()=>{
+const App = ()=>{
   const [notes, setNotes] = useState([]);
 
-  function addNote(newNote) {
-    setNotes(prevNotes => {
-      return [...prevNotes, newNote];
-    });
+  const addNote = (newNote)=>{
+    setNotes(prevNotes => [...prevNotes, newNote]);
   }
 
-  function deleteNote(id) {
+  const deleteNote = id =>{
     setNotes(prevNotes => {
       return prevNotes.filter((noteItem, index) => {
         return index !== id;
@@ -25,7 +23,7 @@ let App = ()=>{
     <div>
       <Header />
       <NoteArea onAdd={addNote} />
-      {notes.map((noteItem, index) => {
+      {notes.reverse().map((noteItem, index) => {
         return (
           <Note
             key={index}

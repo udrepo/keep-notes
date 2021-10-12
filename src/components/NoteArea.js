@@ -3,7 +3,7 @@ import AddIcon from '@material-ui/icons/Add'
 import Fab from '@material-ui/core/Fab'
 import Zoom from '@material-ui/core/Zoom'
 
-let NoteArea = (props) => {
+const NoteArea = props => {
   const [note, setNote] = useState({
     title: "",
     content: ""
@@ -11,7 +11,7 @@ let NoteArea = (props) => {
 
   const [expanded, setExpanded] = useState(false)
 
-  function handleChange(event) {
+  const handleChange = event => {
     const { name, value } = event.target;
 
     setNote(prevNote => {
@@ -22,7 +22,7 @@ let NoteArea = (props) => {
     });
   }
 
-  function submitNote(event) {
+  const submitNote = event => {
     props.onAdd(note);
     setNote({
       title: "",
@@ -31,7 +31,7 @@ let NoteArea = (props) => {
     event.preventDefault();
   }
 
-  let expand = ()=> setExpanded(true)
+  const expand = ()=> setExpanded(true)
 
   return (
     <div>
